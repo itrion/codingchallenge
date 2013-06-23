@@ -12,7 +12,8 @@ public class Translator {
 
 	private static String words(int number, String ending) {
 		if (number == 0) return "";
-		String[] numbers = {"", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+		String[] numbers = {"", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
+			"eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
 		return ((number >= 100) ? numbers[number / 100] + " hundred" + and(number % 100) + numbers[number % 100] : numbers[number]) + ending;
 	}
 }
