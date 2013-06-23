@@ -10,16 +10,12 @@ public class Translator {
 		return (number > 0) && (number < 100) ? " and " : " ";
 	}
 
-	private static String words(int number, String ending) {
-		if (number == 0) return "";
+	private static String words(int n, String ending) {
+		if (n == 0) return "";
 		String[] numbers = {"", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
 			"eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
 		String[] tenSet = {"", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
-		if (number >= 100)
-			return numbers[number / 100] + " hundred" + and(number % 100) + words(number % 100, "") + ending;
-		if (number >= 20)
-			return tenSet[number / 10] + " " + words(number % 10, "") + ending;
-		else
-			return numbers[number]+ ending;
+		return ((n >= 100) ? numbers[n / 100] + " hundred" + and(n % 100) : "") + 
+			   (((n % 100) >= 20) ? tenSet[(n % 100) / 10] + " " + numbers[n % 10] : numbers[n % 20]) + ending;
 	}
 }
