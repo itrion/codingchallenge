@@ -16,9 +16,9 @@ public class Translator {
 			"eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
 		String[] tenSet = {"", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
 		if (number >= 100)
-			return numbers[number / 100] + " hundred" + and(number % 100) + numbers[number % 100] + ending;
+			return numbers[number / 100] + " hundred" + and(number % 100) + words(number % 100, "") + ending;
 		if (number >= 20)
-			return tenSet[number / 10] + " " + words(number % 10, ending);
+			return tenSet[number / 10] + " " + words(number % 10, "") + ending;
 		else
 			return numbers[number]+ ending;
 	}
