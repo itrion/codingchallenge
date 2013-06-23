@@ -82,4 +82,15 @@ public class TranslatorTest {
 		Assert.assertEquals("eight thousand and eight", Translator.translate(8008));
 		Assert.assertEquals("nine thousand and nine", Translator.translate(9009));
 	}		
+	
+	public void thousandsAndNumber() {
+		Assert.assertEquals("one thousand two hundred", Translator.translate(1200));
+		Assert.assertEquals("two thousand three hundred", Translator.translate(2300));
+		Assert.assertEquals("three thousand four hundred", Translator.translate(3400));
+		Assert.assertEquals("four thousand five hundred", Translator.translate(4500));
+		Assert.assertEquals("five thousand six hundred and one", Translator.translate(5601));
+		Assert.assertEquals("six thousand seven hundred and eight", Translator.translate(6708));
+		Assert.assertEquals("seven thousand and one", Translator.translate(7001));
+		Assert.assertEquals("eight thousand and two", Translator.translate(8002));
+	}	
 }
