@@ -70,4 +70,16 @@ public class TranslatorTest {
 		Assert.assertEquals("nine hundred thousand", Translator.translate(900000));
 	}		
 	
+	@Test
+	public void oneThousandAndOneToNineThousandAndNine() {
+		Assert.assertEquals("one thousand and one", Translator.translate(1001));
+		Assert.assertEquals("two thousand and two", Translator.translate(2002));
+		Assert.assertEquals("three thousand and three", Translator.translate(3003));
+		Assert.assertEquals("four thousand and four", Translator.translate(4004));
+		Assert.assertEquals("five thousand and five", Translator.translate(5005));
+		Assert.assertEquals("six thousand and six", Translator.translate(6006));
+		Assert.assertEquals("seven thousand and seven", Translator.translate(7007));
+		Assert.assertEquals("eight thousand and eight", Translator.translate(8008));
+		Assert.assertEquals("nine thousand and nine", Translator.translate(9009));
+	}		
 }
