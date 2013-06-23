@@ -1,7 +1,9 @@
 public class Translator {
 
 	public static String translate(int number) {
-		return (number >= 1000) ? words(number / 1000) + " thousand" + and(number % 1000) + words(number % 1000) : words(number);
+		return	(number >= 1000000) ? words(number / 1000000) + " million" :
+				(number >= 1000) ? words(number / 1000) + " thousand" + and(number % 1000) + words(number % 1000) : 
+				(words(number));
 	}
 
 	private static String and(int number) {
