@@ -139,5 +139,17 @@ public class TranslatorTest {
 		Assert.assertEquals("seventeen", Translator.translate(17));
 		Assert.assertEquals("eighteen", Translator.translate(18));
 		Assert.assertEquals("nineteen", Translator.translate(19));
-}	
+	}
+	
+	@Test
+	public void twentyoNinety() {
+		Assert.assertEquals("twenty", Translator.translate(20));
+		Assert.assertEquals("thirty", Translator.translate(30));
+		Assert.assertEquals("forty", Translator.translate(40));
+		Assert.assertEquals("fifty", Translator.translate(50));
+		Assert.assertEquals("sixty", Translator.translate(60));
+		Assert.assertEquals("seventy", Translator.translate(70));
+		Assert.assertEquals("eighty", Translator.translate(80));
+		Assert.assertEquals("ninety", Translator.translate(90));
+	}	
 }
