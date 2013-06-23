@@ -118,5 +118,12 @@ public class TranslatorTest {
 		Assert.assertEquals("seven million and seven", Translator.translate(7000007));
 		Assert.assertEquals("eight million and eight", Translator.translate(8000008));
 		Assert.assertEquals("nine million and nine", Translator.translate(9000009));
-	}		
+	}	
+	
+	@Test
+	public void millionThousandAndNumber() {
+		Assert.assertEquals("one hundred million two thousand three hundred and four", Translator.translate(100002304));
+		Assert.assertEquals("one hundred and eight million two thousand three hundred and four", Translator.translate(10802304));
+		Assert.assertEquals("one hundred and five million two thousand three hundred and four", Translator.translate(1052304));
+	}	
 }
