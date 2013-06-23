@@ -142,7 +142,7 @@ public class TranslatorTest {
 	}
 	
 	@Test
-	public void twentyoNinety() {
+	public void twentyToNinety() {
 		Assert.assertEquals("twenty", Translator.translate(20));
 		Assert.assertEquals("thirty", Translator.translate(30));
 		Assert.assertEquals("forty", Translator.translate(40));
@@ -152,4 +152,16 @@ public class TranslatorTest {
 		Assert.assertEquals("eighty", Translator.translate(80));
 		Assert.assertEquals("ninety", Translator.translate(90));
 	}	
+	
+	@Test
+	public void twentyOneToNinetySix() {
+		Assert.assertEquals("twenty one", Translator.translate(21));
+		Assert.assertEquals("thirty two", Translator.translate(32));
+		Assert.assertEquals("forty three", Translator.translate(43));
+		Assert.assertEquals("fifty four", Translator.translate(54));
+		Assert.assertEquals("sixty five", Translator.translate(65));
+		Assert.assertEquals("seventy six", Translator.translate(76));
+		Assert.assertEquals("eighty seven", Translator.translate(87));
+		Assert.assertEquals("ninety eight", Translator.translate(98));
+	}		
 }
