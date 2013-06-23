@@ -18,4 +18,16 @@ public class TranslatorTest {
 		Assert.assertEquals("nine", Translator.translate(9));
 	}
 
+	@Test
+	public void oneHundredToNineHundred() {
+		Assert.assertEquals("one hundred", Translator.translate(100));
+		Assert.assertEquals("two hundred", Translator.translate(200));
+		Assert.assertEquals("three hundred", Translator.translate(300));
+		Assert.assertEquals("four hundred", Translator.translate(400));
+		Assert.assertEquals("five hundred", Translator.translate(500));
+		Assert.assertEquals("six hundred", Translator.translate(600));
+		Assert.assertEquals("seven hundred", Translator.translate(700));
+		Assert.assertEquals("eight hundred", Translator.translate(800));
+		Assert.assertEquals("nine hundred", Translator.translate(900));
+	}
 }
