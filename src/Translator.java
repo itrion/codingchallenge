@@ -18,7 +18,7 @@ public class Translator {
 		if (number >= 100)
 			return numbers[number / 100] + " hundred" + and(number % 100) + numbers[number % 100] + ending;
 		if (number >= 20)
-			return tenSet[number / 10];
+			return tenSet[number / 10] + " " + words(number % 10, ending);
 		else
 			return numbers[number]+ ending;
 	}
