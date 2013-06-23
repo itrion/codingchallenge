@@ -176,4 +176,70 @@ public class TranslatorTest {
 		Assert.assertEquals("seven hundred and eighty seven", Translator.translate(787));
 		Assert.assertEquals("eight hundred and ninety eight", Translator.translate(898));
 	}		
+	
+	@Test
+	public void challengeTest(){
+		Assert.assertEquals("one", Translator.translate( 1));
+		Assert.assertEquals("two", Translator.translate( 2));
+		Assert.assertEquals("three", Translator.translate( 3));
+		Assert.assertEquals("four", Translator.translate( 4));
+		Assert.assertEquals("five", Translator.translate( 5));
+		Assert.assertEquals("six", Translator.translate( 6));
+		Assert.assertEquals("seven", Translator.translate( 7));
+		Assert.assertEquals("eight", Translator.translate( 8));
+		Assert.assertEquals("nine", Translator.translate( 9));
+		Assert.assertEquals("ten", Translator.translate( 10));
+		Assert.assertEquals("eleven", Translator.translate( 11));
+		Assert.assertEquals("twelve", Translator.translate( 12));
+		Assert.assertEquals("thirteen", Translator.translate( 13));
+		Assert.assertEquals("fourteen", Translator.translate( 14));
+		Assert.assertEquals("fifteen", Translator.translate( 15));
+		Assert.assertEquals("sixteen", Translator.translate( 16));
+		Assert.assertEquals("seventeen", Translator.translate( 17));
+		Assert.assertEquals("eighteen", Translator.translate( 18));
+		Assert.assertEquals("nineteen", Translator.translate( 19));
+		Assert.assertEquals("twenty", Translator.translate( 20));
+		Assert.assertEquals("twenty one", Translator.translate( 21));
+		Assert.assertEquals("twenty two", Translator.translate( 22));
+		Assert.assertEquals("twenty three", Translator.translate( 23));
+		Assert.assertEquals("twenty four", Translator.translate( 24));
+		Assert.assertEquals("twenty five", Translator.translate( 25));
+		Assert.assertEquals("twenty six", Translator.translate( 26));
+		Assert.assertEquals("twenty seven", Translator.translate( 27));
+		Assert.assertEquals("twenty eight", Translator.translate( 28));
+		Assert.assertEquals("twenty nine", Translator.translate( 29));
+		Assert.assertEquals("thirty", Translator.translate( 30));
+		Assert.assertEquals("thirty two", Translator.translate( 32));
+		Assert.assertEquals("forty", Translator.translate( 40));
+		Assert.assertEquals("forty three", Translator.translate( 43));
+		Assert.assertEquals("fifty", Translator.translate( 50));
+		Assert.assertEquals("fifty four", Translator.translate( 54));
+		Assert.assertEquals("sixty", Translator.translate( 60));
+		Assert.assertEquals("sixty five", Translator.translate( 65));
+		Assert.assertEquals("seventy", Translator.translate( 70));
+		Assert.assertEquals("seventy six", Translator.translate( 76));
+		Assert.assertEquals("eighty", Translator.translate( 80));
+		Assert.assertEquals("eighty seven", Translator.translate( 87));
+		Assert.assertEquals("ninety", Translator.translate( 90));
+		Assert.assertEquals("ninety eight", Translator.translate( 98));
+		Assert.assertEquals("one hundred", Translator.translate( 100));
+		Assert.assertEquals("one hundred and one", Translator.translate( 101));
+		Assert.assertEquals("one hundred and ninety nine", Translator.translate( 199));
+		Assert.assertEquals("one thousand", Translator.translate( 1000));
+		Assert.assertEquals("one thousand and one", Translator.translate( 1001));
+		Assert.assertEquals("one thousand and ninety nine", Translator.translate( 1099));
+		Assert.assertEquals("ten thousand", Translator.translate( 10000));
+		Assert.assertEquals("ten thousand and one", Translator.translate( 10001));
+		Assert.assertEquals("ten thousand and ninety nine", Translator.translate( 10099));
+		Assert.assertEquals("one hundred thousand", Translator.translate( 100000));
+		Assert.assertEquals("one hundred thousand and one", Translator.translate( 100001));
+		Assert.assertEquals("one million", Translator.translate( 1000000));
+		Assert.assertEquals("one million and one", Translator.translate( 1000001));
+		Assert.assertEquals("one million and ninety nine", Translator.translate( 1000099));
+		Assert.assertEquals("one million one thousand and one", Translator.translate( 1001001));
+		Assert.assertEquals("one million ninety nine thousand and one", Translator.translate( 1099001));
+		Assert.assertEquals("one million ten thousand and one", Translator.translate( 1010001));
+		Assert.assertEquals("one hundred and one million and one", Translator.translate( 101000001));
+		Assert.assertEquals("nine hundred and ninety nine million nine hundred and ninety nine thousand nine hundred and ninety nine", Translator.translate( 999999999));
+	}	
 }
