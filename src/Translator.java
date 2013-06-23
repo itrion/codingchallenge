@@ -14,6 +14,12 @@ public class Translator {
 		if (number == 0) return "";
 		String[] numbers = {"", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
 			"eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
-		return ((number >= 100) ? numbers[number / 100] + " hundred" + and(number % 100) + numbers[number % 100] : numbers[number]) + ending;
+		String[] tenSet = {"", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
+		if (number >= 100)
+			return numbers[number / 100] + " hundred" + and(number % 100) + numbers[number % 100] + ending;
+		if (number >= 20)
+			return tenSet[number / 10];
+		else
+			return numbers[number]+ ending;
 	}
 }
