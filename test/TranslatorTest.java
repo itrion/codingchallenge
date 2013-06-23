@@ -125,5 +125,19 @@ public class TranslatorTest {
 		Assert.assertEquals("one hundred million two thousand three hundred and four", Translator.translate(100002304));
 		Assert.assertEquals("one hundred and eight million two thousand three hundred and four", Translator.translate(108002304));
 		Assert.assertEquals("one hundred and five million two thousand three hundred and four", Translator.translate(105002304));
-	}	
+	}
+	
+	@Test
+	public void tenToNineTeen() {
+		Assert.assertEquals("ten", Translator.translate(10));
+		Assert.assertEquals("eleven", Translator.translate(11));
+		Assert.assertEquals("twelve", Translator.translate(12));
+		Assert.assertEquals("thirteen", Translator.translate(13));
+		Assert.assertEquals("fourteen", Translator.translate(14));
+		Assert.assertEquals("fifteen", Translator.translate(15));
+		Assert.assertEquals("sixteen", Translator.translate(16));
+		Assert.assertEquals("seventeen", Translator.translate(17));
+		Assert.assertEquals("eighteen", Translator.translate(18));
+		Assert.assertEquals("nineteen", Translator.translate(19));
+}	
 }
